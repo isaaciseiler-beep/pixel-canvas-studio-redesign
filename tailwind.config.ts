@@ -15,7 +15,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ["'Space Grotesk'", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
+        sans: ["'Satoshi'", "-apple-system", "BlinkMacSystemFont", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       colors: {

@@ -1,18 +1,12 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Sparkles } from "lucide-react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { scrollToPageSection } from "@/lib/scroll";
-
-const DOT_SIZE = 40;
-const DOT_BOTTOM = 20;
-const DOT_LEFT = 24;
-const EXPANDED_WIDTH = 184;
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
 const ChatOrb = () => {
-  const [expanded, setExpanded] = useState(false);
   const [visible, setVisible] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
@@ -20,89 +14,47 @@ const ChatOrb = () => {
   const disabled = location.pathname === "/photos" || location.pathname === "/photos/map";
 
   useEffect(() => {
-    const handleScroll = () => {
-      setVisible(window.scrollY > 10);
-    };
-
+    const handleScroll = () => setVisible(window.scrollY > 24);
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
-    if (!expanded) return;
-    const collapse = () => setExpanded(false);
-    window.addEventListener("scroll", collapse, { passive: true });
-    return () => window.removeEventListener("scroll", collapse);
-  }, [expanded]);
-
-  useEffect(() => {
-    if (disabled) setExpanded(false);
-  }, [disabled]);
-
-  useEffect(() => {
     const handleSidebarState = (event: Event) => {
-      const nextOpen = Boolean((event as CustomEvent<{ open?: boolean }>).detail?.open);
-      setSidebarOpen(nextOpen);
+      setSidebarOpen(Boolean((event as CustomEvent<{ open?: boolean }>).detail?.open));
     };
-
     window.addEventListener("site-sidebar-state", handleSidebarState);
     return () => window.removeEventListener("site-sidebar-state", handleSidebarState);
   }, []);
 
-  const scrollToIsaacAI = () => {
+  const handleClick = () => {
     if (location.pathname === "/") {
       scrollToPageSection("isaac-ai");
       return;
     }
-
     navigate("/#isaac-ai");
   };
 
-  const handleClick = () => {
-    if (!expanded) {
-      setExpanded(true);
-      return;
-    }
-
-    scrollToIsaacAI();
-  };
-
-  const shouldRender = !disabled && (visible || sidebarOpen);
-
   return (
     <AnimatePresence>
-      {shouldRender ? (
+      {!disabled && (visible || sidebarOpen) ? (
         <motion.button
           type="button"
           onClick={handleClick}
-          className="chat-orb site-corner fixed z-[58] flex items-center justify-end overflow-hidden text-accent-foreground shadow-[0_10px_28px_rgba(0,0,0,0.22)]"
-          data-expanded={expanded}
-          style={{
-            bottom: DOT_BOTTOM,
-            left: DOT_LEFT,
-            height: DOT_SIZE,
-            transformOrigin: "left center",
-          }}
-          initial={{ width: DOT_SIZE, scale: 0.84, opacity: 0 }}
-          animate={{ width: expanded ? EXPANDED_WIDTH : DOT_SIZE, scale: 1, opacity: 1 }}
-          exit={{ width: DOT_SIZE, scale: 0.84, opacity: 0 }}
-          transition={{ duration: 0.42, ease: EASE }}
-          whileHover={{ scale: 1.025 }}
-          whileTap={{ scale: 0.985 }}
-          aria-label={expanded ? "Go to Isaac AI" : "Chat with Isaac AI"}
+          className="isaac-ai-pill fixed bottom-5 left-1/2 z-[58] flex items-center gap-2.5 rounded-full px-4 py-2.5 text-[11px] font-medium text-black"
+          style={{ x: "-50%" }}
+          initial={{ opacity: 0, y: 10, scale: 0.96 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: 8, scale: 0.96 }}
+          transition={{ duration: 0.32, ease: EASE }}
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.98 }}
+          aria-label="Open Isaac AI"
         >
-          <motion.span
-            className="relative z-10 min-w-0 flex-1 whitespace-nowrap pl-4 pr-2 text-left text-xs font-semibold leading-none"
-            animate={{ opacity: expanded ? 1 : 0, x: expanded ? 0 : 8 }}
-            transition={{ duration: 0.24, ease: EASE }}
-            aria-hidden={!expanded}
-          >
-            Chat with Isaac AI
-          </motion.span>
-          <span className="relative z-10 flex h-10 w-10 shrink-0 items-center justify-center">
-            <ArrowUpRight className="h-4 w-4" strokeWidth={1.7} />
-          </span>
+          <Sparkles className="h-3.5 w-3.5" strokeWidth={1.6} aria-hidden="true" />
+          <span>Ask Isaac AI</span>
+          <ArrowUpRight className="h-3.5 w-3.5" strokeWidth={1.6} aria-hidden="true" />
         </motion.button>
       ) : null}
     </AnimatePresence>

@@ -94,7 +94,6 @@ export const sitemapItems: SitemapItem[] = [
     { id: "photo-map", label: "Photo Map", href: "/photos/map" },
   ]},
   { id: "inspiration", label: "Inspiration", scrollTo: "inspiration" },
-  { id: "isaac-ai", label: "Isaac AI", scrollTo: "isaac-ai" },
 ];
 
 const socialLinks = [

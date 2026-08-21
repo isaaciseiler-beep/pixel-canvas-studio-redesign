@@ -70,9 +70,9 @@ export interface ProjectItem {
 export const personName = "Isaac Seiler";
 
 export const bioLines = [
-  "I'm Isaac, a recent WashU graduate, Fulbright and Truman Scholar, and a member of OpenAI's ChatGPT Lab.",
-  "I've managed the communications program for a Member of Congress, published work with OpenAI, built a congressional office, founded my own consultancy, and conducted international research on the social and material impacts of AI and the Internet.",
-  "I'm currently in the market for tech roles starting Summer 2026.",
+  "I'm Isaac, a Seattle-based strategist leading marketing and communications at Summation.",
+  "Previously, I managed communications for a Member of Congress, published work with OpenAI, helped build a congressional office, and conducted international research on the social and material impacts of AI and the Internet.",
+  "I'm also a Fulbright and Truman Scholar and a member of OpenAI's ChatGPT Lab.",
 ];
 
 const NEWS_IMG_BASE = "https://pub-0f2ac8ec0d4e41b885a39ae5fd004706.r2.dev";
