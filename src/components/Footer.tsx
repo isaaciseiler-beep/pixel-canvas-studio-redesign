@@ -1,4 +1,5 @@
 import { Mail } from "lucide-react";
+import { Link } from "react-router-dom";
 import { CONTACT_MAILTO, GITHUB_URL, LINKEDIN_URL, SUBSTACK_URL } from "@/lib/site";
 
 const socialLinks = [
@@ -48,6 +49,13 @@ const Footer = () => {
   return (
     <footer id="footer" className="relative overflow-hidden bg-background">
       <div className="relative z-10 px-6 pt-12 pb-6 flex flex-col items-center md:pt-16">
+        <nav aria-label="Footer" className="mb-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-foreground/50">
+          <Link to="/">Home</Link>
+          <Link to="/latest">Latest</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/experience">Experience</Link>
+          <Link to="/credentials">Credentials</Link>
+        </nav>
         {/* Social icons centered */}
         <div className="flex items-center justify-center gap-5 mb-4">
           {socialLinks.map((link) => (

@@ -35,7 +35,7 @@ const NewsSection = () => {
   return (
     <section className="news-compact" aria-labelledby="news-compact-title">
       <div className="news-compact-heading">
-        <h2 id="news-compact-title">News</h2>
+        <h2 id="news-compact-title">Press</h2>
         <div className="news-compact-controls">
           <AnimatePresence initial={false}>
             {canScrollLeft ? (

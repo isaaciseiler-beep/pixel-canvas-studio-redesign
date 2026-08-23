@@ -88,7 +88,8 @@ export const sitemapItems: SitemapItem[] = [
     { id: "project-archive", label: "Projects", href: "/projects" },
   ]},
   { id: "about", label: "About", scrollTo: "about" },
-  { id: "news", label: "News", scrollTo: "news" },
+  { id: "latest", label: "Latest", href: "/latest" },
+  { id: "news", label: "Press", scrollTo: "news" },
   { id: "photos", label: "Photos", scrollTo: "photos", children: [
     { id: "portfolio", label: "Portfolio", href: "/photos" },
     { id: "photo-map", label: "Photo Map", href: "/photos/map" },
@@ -128,6 +129,7 @@ const Sidebar = ({ open, onToggle, onClose, onSearchOpen, activeSection, showTog
   const isOnProjects = location.pathname.startsWith("/projects");
   const isOnExperience = location.pathname.startsWith("/experience");
   const isOnCredentials = location.pathname.startsWith("/credentials");
+  const isOnLatest = location.pathname.startsWith("/latest");
 
   useEffect(() => {
     window.dispatchEvent(new CustomEvent("site-sidebar-state", { detail: { open } }));
@@ -181,6 +183,7 @@ const Sidebar = ({ open, onToggle, onClose, onSearchOpen, activeSection, showTog
     if (isOnProjects && item.id === "projects") return true;
     if (isOnExperience && item.id === "projects") return true;
     if (isOnCredentials && item.id === "projects") return true;
+    if (isOnLatest && item.id === "latest") return true;
     if (activeSection && activeSection === item.id) return true;
     return false;
   };
