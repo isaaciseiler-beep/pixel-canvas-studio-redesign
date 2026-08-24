@@ -3,7 +3,7 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.isaacseiler.xyz/</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/fulbright-focus-group-sponsored-by-openai</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -25,40 +25,40 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/artificial-intelligence-in-state-government-index</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
       <image:loc>https://www.isaacseiler.xyz/project-images/aiindex.jpg</image:loc>
-      <image:title>Artificial Intelligence in State Government Index</image:title>
+      <image:title>Mapping the Rise of AI Across State Government</image:title>
       <image:caption>A public benchmark measuring generative AI adoption across U.S. states and territories.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/congressional-office-setup-100-day-report</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
       <image:loc>https://www.isaacseiler.xyz/project-images/caphill.jpg</image:loc>
-      <image:title>Congressional Office Setup and 100 Day Report</image:title>
+      <image:title>Building a Congressional Operation from Scratch</image:title>
       <image:caption>Systems, staffing, communications, and metrics used to launch a new congressional office.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/senior-thesis-local-journalism</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
       <image:loc>https://www.isaacseiler.xyz/project-images/ainews.jpg</image:loc>
-      <image:title>AI Platforms and Journalism Research</image:title>
+      <image:title>Investigating AI’s Impact on Journalism in Australia</image:title>
       <image:caption>Honors research on AI, digital platforms, local journalism, democracy, and media policy.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/electric-vehicle-access-analysis</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
     <image:image>
@@ -69,7 +69,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/ai-literacy-workshop-for-educators</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <image:image>
@@ -80,7 +80,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/boehringer-cares-foundation-rebrand-strategy-shift</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <image:image>
@@ -91,7 +91,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/communications-consultancy-supporting-local-candidates</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <image:image>
@@ -102,7 +102,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/political-reporting-at-washu</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <image:image>
@@ -113,7 +113,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/2022-institute-for-nonprofit-news-index-survey</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <image:image>
@@ -124,7 +124,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/sustainable-development-health-access-report</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <image:image>
@@ -135,7 +135,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/stl-immigrant-refugee-support-grant-process</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <image:image>
@@ -146,7 +146,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/exclusive-interview-with-high-visibility-congressperson</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <image:image>
@@ -157,7 +157,7 @@
   </url>
   <url>
     <loc>https://www.isaacseiler.xyz/projects/first-personal-website</loc>
-    <lastmod>2026-08-23</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.76</priority>
     <image:image>

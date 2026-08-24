@@ -231,7 +231,7 @@ const BackButton = ({ onClick }: { onClick: () => void }) => (
       >
         <ArrowLeft className="mr-1.5 h-3.5 w-3.5 shrink-0" strokeWidth={1.6} />
       </span>
-      All projects
+      All work
     </span>
   </button>
 );

@@ -502,7 +502,7 @@ const AIStateGovernmentIndexPage = () => {
                       >
                         <ArrowLeft className="mr-1.5 h-3 w-3 shrink-0" strokeWidth={1.5} />
                       </span>
-                      All Projects
+                      All Work
                     </span>
                   </button>
                 </div>

@@ -84,7 +84,9 @@ const ProjectModal = ({ projects, currentIndex, onClose, onNavigate }: ProjectMo
                   }}
                 />
                 <div className="absolute inset-x-0 bottom-0 p-5 md:p-6">
-                  <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.28em] text-white/45">{project.source}</p>
+                  <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.28em] text-white/45">
+                    {project.source === "PROJECT" ? "WORK" : project.source}
+                  </p>
                   <h2 className="max-w-2xl text-2xl font-semibold tracking-tight text-white md:text-4xl">{project.title}</h2>
                   <p className="mt-2 text-sm leading-relaxed text-white/68">{project.summary}</p>
                 </div>

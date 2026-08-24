@@ -52,7 +52,7 @@ const Footer = () => {
         <nav aria-label="Footer" className="mb-5 flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs text-foreground/50">
           <Link to="/">Home</Link>
           <Link to="/latest">Latest</Link>
-          <Link to="/projects">Projects</Link>
+          <Link to="/projects">Work</Link>
           <Link to="/experience">Experience</Link>
           <Link to="/credentials">Credentials</Link>
         </nav>

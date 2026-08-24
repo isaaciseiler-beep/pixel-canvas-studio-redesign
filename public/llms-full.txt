@@ -63,7 +63,7 @@ Summary: How public service, journalism, the Truman Scholarship, a Rhodes finali
 Keywords: Isaac Seiler, Truman Scholar, Truman Scholarship, WashU, Washington University in St. Louis, Rhodes Scholarship, Rhodes Scholarship finalist, Fulbright Scholar, public service AI
 Primary image: https://www.isaacseiler.xyz/experience/washu2.jpg
 
-## Projects
+## Work
 
 ### Fulbright Taiwan Educator Lab with OpenAI Support
 
@@ -78,13 +78,13 @@ Links:
   - Fulbright Taiwan ChatGPT Lab Notion Page: https://notion.so/ChatGPT-Lab-x-Fulbright-Taiwan-261aaef174d680579138e8c1c658ab41
   - PowerPoint Introduction to the Lab: https://docs.google.com/presentation/d/1ZqOp_1KQte52BNBR5OBmOJThCufkNnBtVLBhNW_rkps/edit?slide=id.g38cd4d0aa4c_0_33#slide=id.g38cd4d0aa4c_0_33
 
-### Artificial Intelligence in State Government Index
+### Mapping the Rise of AI Across State Government
 
 URL: https://www.isaacseiler.xyz/projects/artificial-intelligence-in-state-government-index
 Year: 2025
 Type: RESEARCH
 Summary: A public benchmark by Isaac Seiler measuring generative AI adoption, training, governance, pilots, transparency, and preparedness across U.S. states and territories.
-Keywords: Artificial Intelligence in State Government Index, RESEARCH, 2025, A public-information benchmark measuring how state and territory governments are actually responding to generative AI., AI state government index, generative AI government, state AI governance, Council of State Governments, GenAI preparedness, public sector AI, AI policy benchmark, generative AI, state government, AI governance, public policy
+Keywords: Mapping the Rise of AI Across State Government, RESEARCH, 2025, A public-information benchmark measuring how state and territory governments are actually responding to generative AI., AI state government index, generative AI government, state AI governance, Council of State Governments, GenAI preparedness, public sector AI, AI policy benchmark, generative AI, state government, AI governance, public policy
 Primary image: https://www.isaacseiler.xyz/project-images/aiindex.jpg
 Links:
   - The GenAI Benchmark: https://docs.google.com/spreadsheets/d/1BhOYYJF75hnKdcfi5IejWD8tHovsdnay/edit?usp=sharing&ouid=107923489516143255873&rtpof=true&sd=true
@@ -104,24 +104,24 @@ Links:
   - Workshop Slide Deck: https://pub-fa8ebd83ba8d4bf99e2e7f12e394fc2f.r2.dev/Artificial%20Intelligence%20in%20the%20Classroom.pdf
   - Anthropic AI Fluency Foundations Course: https://lnkd.in/gnUB8D7M
 
-### AI Platforms and Journalism Research
+### Investigating AI’s Impact on Journalism in Australia
 
 URL: https://www.isaacseiler.xyz/projects/senior-thesis-local-journalism
 Year: 2025
 Type: RESEARCH
 Summary: Isaac Seiler's honors thesis analyzed AI, digital platforms, local journalism, democratic accountability, media policy, and newsroom labor through qualitative interviews.
-Keywords: AI Platforms and Journalism Research, RESEARCH, 2025, A qualitative honors thesis on the structural decline of local journalism in Australia and its implications for democracy, labor, and media policy., AI journalism research, AI platforms journalism, local journalism thesis, digital platforms, media policy, Australia journalism, qualitative interviews, AI, journalism, digital platforms, local news, media policy
+Keywords: Investigating AI’s Impact on Journalism in Australia, RESEARCH, 2025, A qualitative honors thesis on the structural decline of local journalism in Australia and its implications for democracy, labor, and media policy., AI journalism research, AI platforms journalism, local journalism thesis, digital platforms, media policy, Australia journalism, qualitative interviews, AI, journalism, digital platforms, local news, media policy
 Primary image: https://www.isaacseiler.xyz/project-images/ainews.jpg
 Links:
   - Final Thesis Draft: https://drive.google.com/file/d/1Z6-RR1Zw7z2RieJwVHdk0yOtycRIN1ia/view?usp=sharing
 
-### Congressional Office Setup and 100 Day Report
+### Building a Congressional Operation from Scratch
 
 URL: https://www.isaacseiler.xyz/projects/congressional-office-setup-100-day-report
 Year: 2025
 Type: WORK
 Summary: Isaac Seiler helped stand up a new congressional office and produced early systems, staffing, metrics, communications, and first-100-day reporting.
-Keywords: Congressional Office Setup and 100 Day Report, WORK, 2025, A report capturing the systems, staffing, and benchmarks used to stand up a brand-new congressional office from zero., congressional office setup, 100 day report, Capitol Hill communications, House office operations, public service communications, Congress, communications, public service, operations
+Keywords: Building a Congressional Operation from Scratch, WORK, 2025, A report capturing the systems, staffing, and benchmarks used to stand up a brand-new congressional office from zero., congressional office setup, 100 day report, Capitol Hill communications, House office operations, public service communications, Congress, communications, public service, operations
 Primary image: https://www.isaacseiler.xyz/project-images/caphill.jpg
 Links:
   - 100 Day Report Executive Summary: https://drive.google.com/file/d/1gdSr7RjjmidqJkLTWkyIbesVPIkECizn/view
@@ -246,20 +246,20 @@ Links:
    Page: https://www.isaacseiler.xyz/projects/fulbright-focus-group-sponsored-by-openai
    Alt: Fulbright Taiwan ChatGPT Lab and OpenAI education project preview
    Caption: Isaac Seiler founded and led an OpenAI-supported Fulbright Taiwan ChatGPT Lab for educators.
-3. Artificial Intelligence in State Government Index
+3. Mapping the Rise of AI Across State Government
    URL: https://www.isaacseiler.xyz/project-images/aiindex.jpg
    Page: https://www.isaacseiler.xyz/projects/artificial-intelligence-in-state-government-index
-   Alt: Artificial Intelligence in State Government Index project preview
+   Alt: Mapping the Rise of AI Across State Government work preview
    Caption: A public benchmark measuring generative AI adoption across U.S. states and territories.
-4. Congressional Office Setup and 100 Day Report
+4. Building a Congressional Operation from Scratch
    URL: https://www.isaacseiler.xyz/project-images/caphill.jpg
    Page: https://www.isaacseiler.xyz/projects/congressional-office-setup-100-day-report
-   Alt: Congressional Office Setup and 100 Day Report project preview
+   Alt: Building a Congressional Operation from Scratch work preview
    Caption: Systems, staffing, communications, and metrics used to launch a new congressional office.
-5. AI Platforms and Journalism Research
+5. Investigating AI’s Impact on Journalism in Australia
    URL: https://www.isaacseiler.xyz/project-images/ainews.jpg
    Page: https://www.isaacseiler.xyz/projects/senior-thesis-local-journalism
-   Alt: AI platforms and local journalism honors thesis project preview
+   Alt: AI platforms and local journalism honors thesis work preview
    Caption: Honors research on AI, digital platforms, local journalism, democracy, and media policy.
 6. Electric Vehicle Charging Access Analysis
    URL: https://www.isaacseiler.xyz/project-images/charging.jpg

@@ -4,14 +4,13 @@ import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { projectItems, type ProjectItem } from "@/lib/siteContent";
 
-type ProjectFilter = "ALL" | ProjectItem["source"];
+type ProjectFilter = "ALL" | Exclude<ProjectItem["source"], "PROJECT">;
 
 const filters: { label: string; value: ProjectFilter }[] = [
   { label: "All", value: "ALL" },
   { label: "Research", value: "RESEARCH" },
   { label: "Work", value: "WORK" },
   { label: "Reporting", value: "REPORTING" },
-  { label: "Projects", value: "PROJECT" },
 ];
 
 const ProjectsSection = () => {
@@ -20,7 +19,11 @@ const ProjectsSection = () => {
   const projects = useMemo(() => {
     const matches = filter === "ALL"
       ? projectItems
-      : projectItems.filter((project) => project.source === filter);
+      : projectItems.filter((project) =>
+          filter === "WORK"
+            ? project.source === "WORK" || project.source === "PROJECT"
+            : project.source === filter,
+        );
     return matches.slice(0, filter === "ALL" ? 9 : 12);
   }, [filter]);
 
@@ -33,7 +36,7 @@ const ProjectsSection = () => {
         </Link>
       </div>
 
-      <div className="work-library-tabs" role="tablist" aria-label="Filter projects">
+      <div className="work-library-tabs" role="tablist" aria-label="Filter work">
         {filters.map((item) => (
           <button
             key={item.value}
@@ -73,7 +76,7 @@ const ProjectsSection = () => {
                 />
                 <div className="work-library-scrim" />
                 <div className="work-library-card-top">
-                  <span>{project.source}</span>
+                  <span>{project.source === "PROJECT" ? "WORK" : project.source}</span>
                   <span>{project.year}</span>
                 </div>
                 <div className="work-library-card-bottom">

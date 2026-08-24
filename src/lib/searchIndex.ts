@@ -33,7 +33,7 @@ export interface SearchGroup {
 
 const CATEGORY_LABELS: Record<SearchCategory, string> = {
   latest: "Latest",
-  projects: "Projects",
+  projects: "Work",
   news: "News",
   photos: "Photos",
   inspiration: "Inspiration",
@@ -154,7 +154,7 @@ const SEMANTIC_EXPANSIONS: Record<string, string[]> = {
 };
 
 const CATEGORY_INTENTS: Record<SearchCategory, string[]> = {
-  latest: ["latest", "blog", "blogs", "post", "posts", "writing", "update", "updates", "recent"],
+  latest: ["latest", "writing", "article", "articles", "update", "updates", "recent"],
   projects: ["project", "projects", "case study", "case studies", "built", "building", "made", "portfolio work"],
   news: ["news", "article", "articles", "press", "featured", "coverage", "headline", "announcement"],
   photos: ["photo", "photos", "picture", "pictures", "pics", "image", "images", "album", "albums", "map", "travel"],
@@ -310,7 +310,7 @@ export const searchDocuments: SearchDocument[] = [
       id: project.id,
       category: "projects" as const,
       title: project.title,
-      subtitle: `${project.source} / ${project.year}`,
+      subtitle: `${project.source === "PROJECT" ? "WORK" : project.source} / ${project.year}`,
       description: project.summary,
       href: `/projects/${project.id}`,
       image: project.image,

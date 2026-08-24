@@ -85,7 +85,7 @@ export const sitemapItems: SitemapItem[] = [
   { id: "hero", label: "Home", scrollTo: "hero" },
   { id: "projects", label: "Work", scrollTo: "projects", children: [
     { id: "experience", label: "Experience", href: "/experience" },
-    { id: "project-archive", label: "Projects", href: "/projects" },
+    { id: "project-archive", label: "All Work", href: "/projects" },
   ]},
   { id: "about", label: "About", scrollTo: "about" },
   { id: "latest", label: "Latest", href: "/latest" },

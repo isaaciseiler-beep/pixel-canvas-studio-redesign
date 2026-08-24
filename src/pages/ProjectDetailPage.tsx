@@ -113,7 +113,7 @@ const ProjectDetailPage = () => {
   if (!project) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-background text-foreground">
-        <button onClick={() => navigate("/projects")} className="font-mono text-xs uppercase tracking-widest">← Back to projects</button>
+        <button onClick={() => navigate("/projects")} className="font-mono text-xs uppercase tracking-widest">← Back to work</button>
       </div>
     );
   }
@@ -162,7 +162,7 @@ const ProjectDetailPage = () => {
               >
                 <ArrowLeft className="w-3 h-3 mr-1.5 shrink-0" strokeWidth={1.5} />
               </span>
-              All Projects
+              All Work
             </span>
           </button>
 

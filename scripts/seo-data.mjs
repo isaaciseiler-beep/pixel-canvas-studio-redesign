@@ -74,7 +74,7 @@ export const topLevelPages = [
     image: { url: projectCardImages.chatLab },
     keywords: [
       "Latest from Isaac Seiler",
-      "Isaac Seiler blog",
+      "Isaac Seiler updates",
       "Summation AI",
       "OpenAI Student Collective",
       "ChatGPT Lab",
@@ -85,10 +85,10 @@ export const topLevelPages = [
   },
   {
     path: "/projects",
-    navTitle: "Projects",
-    title: "Projects | Isaac Seiler AI, Public Technology, Journalism, and Communications Work",
+    navTitle: "Work",
+    title: "Work | Isaac Seiler AI, Public Technology, Journalism, and Communications",
     description:
-      "Research, AI education, public policy, journalism, campaign communications, and strategy projects by Isaac Seiler.",
+      "Research, AI education, public policy, journalism, campaign communications, and strategy work by Isaac Seiler.",
     sitelinkDescription:
       "Standalone case studies on AI education, public-sector AI, journalism research, communications, and civic technology.",
     priority: "0.95",
@@ -224,7 +224,7 @@ export const projectSeo = {
     sameAs: ["https://edunewsletter.openai.com/p/top-chats-from-the-fulbright-taiwan"],
   },
   "artificial-intelligence-in-state-government-index": {
-    title: "Artificial Intelligence in State Government Index | Isaac Seiler",
+    title: "Mapping the Rise of AI Across State Government | Isaac Seiler",
     description:
       "A public benchmark by Isaac Seiler measuring generative AI adoption, training, governance, pilots, transparency, and preparedness across U.S. states and territories.",
     searchIntent:
@@ -236,7 +236,7 @@ export const projectSeo = {
     ],
     image: {
       url: projectCardImages.aiIndex,
-      alt: "Artificial Intelligence in State Government Index project preview",
+      alt: "Mapping the Rise of AI Across State Government work preview",
     },
     keywords: [
       "AI state government index",
@@ -250,7 +250,7 @@ export const projectSeo = {
     about: ["generative AI", "state government", "AI governance", "public policy"],
   },
   "congressional-office-setup-100-day-report": {
-    title: "Congressional Office Setup and 100 Day Report | Isaac Seiler",
+    title: "Building a Congressional Operation from Scratch | Isaac Seiler",
     description:
       "Isaac Seiler helped stand up a new congressional office and produced early systems, staffing, metrics, communications, and first-100-day reporting.",
     searchIntent:
@@ -262,7 +262,7 @@ export const projectSeo = {
     ],
     image: {
       url: projectCardImages.capHill,
-      alt: "Congressional Office Setup and 100 Day Report project preview",
+      alt: "Building a Congressional Operation from Scratch work preview",
     },
     keywords: [
       "congressional office setup",
@@ -274,7 +274,7 @@ export const projectSeo = {
     about: ["Congress", "communications", "public service", "operations"],
   },
   "senior-thesis-local-journalism": {
-    title: "AI Platforms and Journalism Research | Isaac Seiler",
+    title: "Investigating AI’s Impact on Journalism in Australia | Isaac Seiler",
     description:
       "Isaac Seiler's honors thesis analyzed AI, digital platforms, local journalism, democratic accountability, media policy, and newsroom labor through qualitative interviews.",
     searchIntent:
@@ -473,8 +473,8 @@ export const priorityImages = [
     id: "ai-state-government-index",
     url: projectCardImages.aiIndex,
     page: "/projects/artificial-intelligence-in-state-government-index",
-    title: "Artificial Intelligence in State Government Index",
-    alt: "Artificial Intelligence in State Government Index project preview",
+    title: "Mapping the Rise of AI Across State Government",
+    alt: "Mapping the Rise of AI Across State Government work preview",
     caption:
       "A public benchmark measuring generative AI adoption across U.S. states and territories.",
   },
@@ -482,8 +482,8 @@ export const priorityImages = [
     id: "congressional-office-100-day-report",
     url: projectCardImages.capHill,
     page: "/projects/congressional-office-setup-100-day-report",
-    title: "Congressional Office Setup and 100 Day Report",
-    alt: "Congressional Office Setup and 100 Day Report project preview",
+    title: "Building a Congressional Operation from Scratch",
+    alt: "Building a Congressional Operation from Scratch work preview",
     caption:
       "Systems, staffing, communications, and metrics used to launch a new congressional office.",
   },
@@ -491,8 +491,8 @@ export const priorityImages = [
     id: "ai-platforms-journalism-research",
     url: projectCardImages.aiNews,
     page: "/projects/senior-thesis-local-journalism",
-    title: "AI Platforms and Journalism Research",
-    alt: "AI platforms and local journalism honors thesis project preview",
+    title: "Investigating AI’s Impact on Journalism in Australia",
+    alt: "AI platforms and local journalism honors thesis work preview",
     caption:
       "Honors research on AI, digital platforms, local journalism, democracy, and media policy.",
   },

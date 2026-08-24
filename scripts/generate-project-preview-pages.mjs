@@ -464,7 +464,7 @@ const projectStructuredData = (project) => ({
     ...globalGraph(),
     breadcrumbFor([
       { name: "Home", path: "/" },
-      { name: "Projects", path: "/projects" },
+      { name: "Work", path: "/projects" },
       { name: project.title, path: projectLinkPath(project) },
     ]),
     imageObjectFor({
@@ -529,20 +529,20 @@ const projectsPageStructuredData = () => ({
     ...globalGraph(),
     breadcrumbFor([
       { name: "Home", path: "/" },
-      { name: "Projects", path: "/projects" },
+      { name: "Work", path: "/projects" },
     ]),
     {
       "@type": "CollectionPage",
       "@id": `${absoluteUrl("/projects")}#webpage`,
       url: absoluteUrl("/projects"),
-      name: "Isaac Seiler Projects",
+      name: "Isaac Seiler Work",
       description: topPageByPath.get("/projects").description,
       isPartOf: { "@id": `${SITE_URL}/#website` },
       about: { "@id": `${SITE_URL}/#person` },
       hasPart: enrichedProjects.map((project) => ({ "@id": `${projectUrl(project)}#webpage` })),
       mainEntity: {
         "@type": "ItemList",
-        name: "Isaac Seiler project archive",
+        name: "Isaac Seiler work archive",
         itemListElement: enrichedProjects.map((project, index) => ({
           "@type": "ListItem",
           position: index + 1,
@@ -569,15 +569,15 @@ const latestPageStructuredData = () => ({
       { name: "Latest", path: "/latest" },
     ]),
     {
-      "@type": ["Blog", "CollectionPage"],
-      "@id": `${absoluteUrl("/latest")}#blog`,
+      "@type": "CollectionPage",
+      "@id": `${absoluteUrl("/latest")}#collection`,
       url: absoluteUrl("/latest"),
       name: "Latest from Isaac Seiler",
       description: topPageByPath.get("/latest").description,
       isPartOf: { "@id": `${SITE_URL}/#website` },
       publisher: { "@id": `${SITE_URL}/#person` },
       author: { "@id": `${SITE_URL}/#person` },
-      blogPost: enrichedLatest.map((item) => ({ "@id": `${item.url}#article` })),
+      hasPart: enrichedLatest.map((item) => ({ "@id": `${item.url}#article` })),
       mainEntity: {
         "@type": "ItemList",
         itemListElement: enrichedLatest.map((item, index) => ({
@@ -585,7 +585,7 @@ const latestPageStructuredData = () => ({
           position: index + 1,
           item: {
             "@id": `${item.url}#article`,
-            "@type": "BlogPosting",
+            "@type": "Article",
             headline: item.title,
             url: item.url,
             datePublished: item.published,
@@ -620,7 +620,7 @@ const latestArticleStructuredData = (item) => {
         position: 1,
       }),
       {
-        "@type": "BlogPosting",
+        "@type": "Article",
         "@id": `${item.url}#article`,
         url: item.url,
         headline: item.title,
@@ -639,7 +639,7 @@ const latestArticleStructuredData = (item) => {
         about: item.about.map((name) => ({ "@type": "Thing", name })),
         mentions: item.keywords.slice(0, 12).map((name) => ({ "@type": "Thing", name })),
         mainEntityOfPage: `${item.url}#webpage`,
-        isPartOf: { "@id": `${absoluteUrl("/latest")}#blog` },
+        isPartOf: { "@id": `${absoluteUrl("/latest")}#collection` },
         isAccessibleForFree: true,
         inLanguage: "en-US",
       },
@@ -779,7 +779,7 @@ const applyHead = (html, route) => {
   nextHtml = setMetaByItemprop(nextHtml, "image", image.url);
   if (route.ogType === "article") {
     nextHtml = setMetaByProperty(nextHtml, "article:author", SITE_NAME);
-    nextHtml = setMetaByProperty(nextHtml, "article:section", route.section ?? "Projects");
+    nextHtml = setMetaByProperty(nextHtml, "article:section", route.section ?? "Work");
     nextHtml = setMetaByProperty(
       nextHtml,
       "article:published_time",
@@ -858,7 +858,7 @@ const renderHomepageFallback = () => `
       <section>
         <h2>Key Site Sections</h2>
         <ul>
-          <li><a href="/projects">Projects</a>: AI, public policy, communications, journalism, and research case studies.</li>
+          <li><a href="/projects">Work</a>: AI, public policy, communications, journalism, and research case studies.</li>
           <li><a href="/photos">Photos</a>: travel photography and albums.</li>
           <li><a href="/experience">Experience</a>: OpenAI, Fulbright Taiwan, Council of State Governments, Boehringer Ingelheim, Congress, campaigns, and journalism.</li>
           <li><a href="/credentials">Credentials</a>: Fulbright, Truman, Rhodes finalist, and OpenAI ChatGPT Lab highlights.</li>
@@ -872,7 +872,7 @@ const renderHomepageFallback = () => `
       </section>
       ${renderPriorityImages()}
       <section>
-        <h2>Featured Projects</h2>
+        <h2>Featured Work</h2>
         ${priorityImageObjects
           .map((image) => projectById.get(image.page.replace("/projects/", "")))
           .filter(Boolean)
@@ -884,10 +884,10 @@ const renderHomepageFallback = () => `
 const renderProjectsFallback = () => `
     <main>
       ${renderNav()}
-      <h1>Projects by Isaac Seiler</h1>
+      <h1>Work by Isaac Seiler</h1>
       <p>${escapeHtml(topPageByPath.get("/projects").description)}</p>
       <section>
-        <h2>Core Project Areas</h2>
+        <h2>Core Work Areas</h2>
         <ul>
           <li>AI education and OpenAI-supported educator work.</li>
           <li>Public-sector AI adoption, governance, and state government benchmarking.</li>
@@ -944,7 +944,7 @@ const renderLatestArticleFallback = (item) => `
 const renderProjectFallback = (project) => `
     <main>
       ${renderNav()}
-      <p><a href="/projects">All Projects</a></p>
+      <p><a href="/projects">All Work</a></p>
       <article>
         <h1>${escapeHtml(project.title)}</h1>
         <p>${escapeHtml(project.seoDescription)}</p>
@@ -988,7 +988,7 @@ const renderProjectFallback = (project) => `
         <section>
           <h2>Related Isaac Seiler Sections</h2>
           <ul>
-            <li><a href="/projects">All projects</a></li>
+            <li><a href="/projects">All work</a></li>
             <li><a href="/experience">Experience</a></li>
             <li><a href="/credentials">Credentials</a></li>
           </ul>
@@ -1010,7 +1010,7 @@ const renderPageFallback = (page) => {
         <h2>Related Links</h2>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
+          <li><a href="/projects">Work</a></li>
           <li><a href="/experience">Experience</a></li>
           <li><a href="/photos">Photos</a></li>
           <li><a href="/credentials">Credentials</a></li>
@@ -1046,7 +1046,7 @@ const routeForProject = (project) => ({
   description: project.seoDescription,
   keywords: project.keywords,
   image: project.seoImage,
-  ogType: "article",
+  ogType: "website",
   section: project.source,
   year: project.year,
   structuredData: projectStructuredData(project),
@@ -1240,12 +1240,12 @@ ${SITE_DESCRIPTION}
 
 - [Home](${SITE_URL}/): overview, featured work, photos, news, and Isaac AI.
 - [Latest](${SITE_URL}/latest): dated first-party writing on Summation AI, OpenAI, AI education, public technology, WashU, and the Truman Scholarship.
-- [Projects](${SITE_URL}/projects): project archive with individual pages for AI, public policy, journalism, communications, and research work.
+- [Work](${SITE_URL}/projects): work archive with individual pages for AI, public policy, journalism, communications, and research.
 - [Experience](${SITE_URL}/experience): current work leading marketing and communications at Summation, plus OpenAI, Fulbright Taiwan, AI research, Congress, campaigns, and journalism.
 - [Credentials](${SITE_URL}/credentials): concise credentials and proof points.
 - [Photos](${SITE_URL}/photos): travel photography and image archive.
 
-## High-Priority Project Pages
+## High-Priority Work Pages
 
 ${enrichedProjects
   .map((project) => `- [${project.title}](${projectUrl(project)}): ${project.seoDescription}`)
@@ -1305,7 +1305,7 @@ Keywords: ${item.keywords.join(", ")}
 Primary image: ${item.seoImage.url}`)
   .join("\n\n")}
 
-## Projects
+## Work
 
 ${enrichedProjects
   .map((project) => {

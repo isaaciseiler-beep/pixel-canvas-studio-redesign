@@ -191,7 +191,7 @@ export const newsItems: NewsItem[] = [
 export const projectItems: ProjectItem[] = [
   {
     id: "artificial-intelligence-in-state-government-index",
-    title: "Artificial Intelligence in State Government Index",
+    title: "Mapping the Rise of AI Across State Government",
     source: "RESEARCH",
     year: "2025",
     summary:
@@ -228,7 +228,7 @@ export const projectItems: ProjectItem[] = [
   },
   {
     id: "congressional-office-setup-100-day-report",
-    title: "Congressional Office Setup and 100 Day Report",
+    title: "Building a Congressional Operation from Scratch",
     source: "WORK",
     year: "2025",
     summary:
@@ -305,7 +305,7 @@ export const projectItems: ProjectItem[] = [
   },
   {
     id: "senior-thesis-local-journalism",
-    title: "AI Platforms and Journalism Research",
+    title: "Investigating AI’s Impact on Journalism in Australia",
     source: "RESEARCH",
     year: "2025",
     summary:
